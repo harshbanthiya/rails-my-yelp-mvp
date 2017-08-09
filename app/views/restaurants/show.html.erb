@@ -1,0 +1,26 @@
+<div class = "display_matter">
+	<h3><%= @restaurant.title %></h3>
+	<h4>Address: </h4><strong><%= @restaurant.address%></strong>
+	<h4>Description: </h4><strong><%= @restaurant.description%></strong>
+	<h4>Rating: </h4>
+	<% 5.times do |i| %>
+	<i id = "change-color" class="fa <%= @restaurant.rating > i  ? 'fa-star' : 'fa-star-o' %>" aria-hidden="true"></i>
+	<% end %>
+	<br> <br> 
+
+	<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+	<%= link_to 'Back', restaurants_path %>
+</div>
+
+<div class = "display_matter">
+	<h3>Current Reviews</h3>
+	<% @reviews.each do |review| %>
+	<% 5.times do |i| %>
+	<i id= "change-color-again" class="fa <%= review.rating > i  ? 'fa-star' : 'fa-star-o' %>" aria-hidden="true"></i>
+	<% end %>
+	<br> <br>
+    <strong><%= review.description %> </strong>
+	<br><br>
+    <% end %>
+</div>
+

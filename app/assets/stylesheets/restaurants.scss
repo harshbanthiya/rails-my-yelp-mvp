@@ -1,0 +1,70 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h3{
+	font-family: 'Cabin', sans-serif;font-family: 'Cabin', sans-serif;
+	color: #e3aa4c;
+}
+
+h4{
+	font-family: 'Cabin', sans-serif;font-family: 'Cabin', sans-serif;
+	color: #291810;
+}
+
+strong{
+   font-family: 'Raleway', sans-serif;
+   color:#544a4a;
+}
+
+a{ 
+	font-family: 'Cabin', sans-serif;font-family: 'Cabin', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color:#005ccc;
+	text-align:justify;
+}
+
+.matter{
+    box-shadow: 5px 5px 5px #abc0c1;
+	padding: 10px;
+	margin: 20px 20px;
+	text-align: justify;
+	
+}
+
+.display_matter{
+	box-shadow: 5px 5px 5px #abc0c1;
+	padding: 10px;
+	margin: 20px 20px;
+	text-align: justify;
+}
+
+.container{
+	display:flex;
+	justify-content: space-around;
+}
+.form-inputs{
+	font-family: 'Raleway', sans-serif;
+    color:#544a4a;
+}
+
+#new-resto{
+	text-align:center;
+}
+
+h1{
+	font-family: 'Cabin', sans-serif;font-family: 'Cabin', sans-serif;
+    color: #e3aa4c;
+    text-align:center;
+}
+
+#change-color{
+	color: #e3aa4c;
+}
+
+#change-color-again{
+	color: #e3aa4c;
+}
+
+
+

@@ -1,0 +1,25 @@
+<h1>Restaurants</h1>
+<div id="new-resto"><%= link_to 'New Restaurant', new_restaurant_path %></div>
+<div class="container">
+
+ <% @restaurants.each do |restaurant| %>
+
+ <div class="matter">
+  <h3><%= restaurant.title %></h3>
+    <h4>Address: </h4><strong><%= restaurant.address%></strong>
+    <h4>Description: </h4><strong><%= restaurant.description%></strong>
+    <h4>Rating: </h4>
+    <% 5.times do |i| %>
+    <i id = "change-color" class="fa <%= restaurant.rating > i  ? 'fa-star' : 'fa-star-o' %>" aria-hidden="true"></i>
+    <% end %>
+    <br> <br> 
+    <%= link_to 'Show', restaurant %> |
+    <%= link_to 'Edit', edit_restaurant_path(restaurant) %> |
+    <%= link_to 'Destroy', restaurant, method: :delete %> 
+  </div>
+  <% end %>
+</div>
+
+
+
+
